@@ -1,5 +1,14 @@
 # Event Ticketing Microservices
 
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5-brightgreen.svg)
+![Java](https://img.shields.io/badge/Java-17-orange.svg)
+![Docker](https://img.shields.io/badge/Docker-Compose-blue.svg)
+![RabbitMQ](https://img.shields.io/badge/RabbitMQ-3-red.svg)
+![Build Status](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-blueviolet.svg)
+
+Authors: Popazu George Alexandru & Neguț Alexandra | Group: 1241 EC — FILS (UNSTPB)
+
+Course: Software Design Technologies (SDT) — Project 1
 Java 25 / Spring Boot 3.3 application split into two independently runnable
 services and a shared RabbitMQ message-contract module:
 
