@@ -1,0 +1,5 @@
+com\example\ticketing\notification\TicketingEventConsumer.class
+com\example\ticketing\notification\NotificationApplication.class
+com\example\ticketing\notification\NotificationLogService.class
+com\example\ticketing\notification\NotificationController.class
+com\example\ticketing\notification\NotificationLog.class

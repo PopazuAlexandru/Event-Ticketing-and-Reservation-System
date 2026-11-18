@@ -1,0 +1,3 @@
+com\example\ticketing\messaging\RabbitMqConfiguration.class
+com\example\ticketing\messaging\TicketingEvent.class
+com\example\ticketing\messaging\TicketingMessaging.class

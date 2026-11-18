@@ -1,0 +1,108 @@
+{
+  "info": {
+    "_postman_id": "0857c9da-565d-4af0-8d70-85f52efc182c",
+    "name": "SDT_Event_Ticketing",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "59306408",
+    "_collection_link": "https://go.postman.co/collection/59306408-0857c9da-565d-4af0-8d70-85f52efc182c?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "1. Get Events",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8081/api/events",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "api",
+            "events"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "2. Create Reservation",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"userId\": \"user-123\",\r\n  \"eventId\": \"a8ab56b2-1e11-4059-aeda-b982b8fe17e5\",\r\n  \"ticketCategoryId\": \"VIP\",\r\n  \"pricingType\": \"STANDARD\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8081/api/reservations/create",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "api",
+            "reservations",
+            "create"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "3. Pay Reservation",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"reservationId\": \"cce34412-d0e6-42fa-bd68-db37237e106a\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8081/api/reservations/pay?reservationId=cce34412-d0e6-42fa-bd68-db37237e106a",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "api",
+            "reservations",
+            "pay"
+          ],
+          "query": [
+            {
+              "key": "reservationId",
+              "value": "cce34412-d0e6-42fa-bd68-db37237e106a"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "4. Get Notifications",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    }
+  ]
+}
